@@ -10,6 +10,8 @@ test('Test Seed', async({page})=>{
     await page.getByRole('button', {name:"New Tab"}).click()
     await page.getByText('This is a sample page').isVisible()
 
+    
+
 
 })
 

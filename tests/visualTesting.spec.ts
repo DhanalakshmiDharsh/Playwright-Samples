@@ -11,6 +11,8 @@ test('visual testing', async({page})=>{
     await selectionOf.check({force:true})
 
     await expect(selectionOf).toHaveScreenshot()
+    const firstName = page.getByPlaceholder('First Name')
+    await expect(firstName).toHaveScreenshot()
 
 
 
